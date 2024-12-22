@@ -72,8 +72,6 @@ Route::get('/{page}', [AdminController::class, 'index']);
 
 Route::group(['middleware' => ['auth']],function(){
 
-    Route::resource('roles',RoleController::class);
-    Route::resource('users',UserController::class);
 
 });
 
